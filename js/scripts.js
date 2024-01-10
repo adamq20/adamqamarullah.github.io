@@ -52,3 +52,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Navbar
+gsap.to("#holdup", {duration: 2, text: "Hi, Fella", delay: 1});
+
+// Name
+let tween = gsap.to("#nameGSAP", {
+    text: {
+      value: "Adam Qamarullah"
+    }, 
+    duration: 5,
+    delay: 1, 
+    ease: "none",
+    onUpdate: () => text.appendChild(cursor)
+  })
